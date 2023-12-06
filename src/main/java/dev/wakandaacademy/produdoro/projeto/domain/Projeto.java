@@ -12,13 +12,13 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-public class Projeto {
+
 	@Builder
 	@NoArgsConstructor(access = AccessLevel.PRIVATE )
 	@AllArgsConstructor(access = AccessLevel.PRIVATE )
 	@Getter
 	@Document(collection = "Projeto")
-	public class Usuario {
+	public class Projeto {
 	@Id
 	private UUID idProjeto;
 	private String nome;
@@ -28,5 +28,5 @@ public class Projeto {
 	@Indexed
 	private UUID idArea;
 
-}
+
 }
